@@ -2,127 +2,365 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Gouni Ramakrishna Reddy — Salesforce Technical Lead and Developer. Explore technical expertise, business domain experience, integrations, managed packages and custom applications.">
-<meta name="theme-color" content="#07111f">
-<title>Gouni Ramakrishna Reddy | Salesforce Technical Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Salesforce Corporate Boot Camp — intensive, hands-on Salesforce training with 1-to-1 mentoring or maximum 5 learners per batch.">
+<title>Salesforce Corporate Boot Camp | Learn. Build. Become Job Ready.</title>
 <style>
-:root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10243a;--text:#edf4ff;--muted:#a8b8cc;--blue:#56a8ff;--cyan:#5de0d0;--line:rgba(174,204,239,.15);--max:1200px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(circle at 85% 5%,#12375a 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-header{position:sticky;top:0;z-index:30;background:rgba(7,17,31,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;white-space:nowrap}.brand span{color:var(--cyan)}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{font-size:.82rem;color:var(--muted)}nav a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 12px;border-radius:8px}
-.hero{padding:88px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center}.eyebrow,.kicker{color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.03;letter-spacing:-2px;margin:16px 0}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:1.08rem;color:var(--muted);max-width:760px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}.btn{padding:10px 17px;border-radius:9px;font-weight:750;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:linear-gradient(110deg,#2678d5,#26b8b0);border:0;color:#04111e}.secondary:hover{border-color:var(--cyan);color:var(--cyan)}
-.profile-card,.panel,.skill,.project,.domain,.service,.cert,.capability{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.profile-card{background:linear-gradient(150deg,rgba(34,79,119,.55),rgba(13,27,45,.95));padding:27px;box-shadow:0 25px 70px #0005}.avatar{width:78px;height:78px;border-radius:20px;background:linear-gradient(135deg,#236bc2,#45d5c1);display:grid;place-items:center;font-size:1.9rem;font-weight:900;color:#04111e;margin-bottom:16px}.profile-card h3{margin:0}.profile-card p{color:var(--muted);font-size:.9rem}.statrow{display:grid;grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px;background:#071727a8;border:1px solid var(--line);border-radius:11px}.stat strong{display:block;font-size:1.3rem;color:var(--cyan)}.stat small{color:var(--muted)}
-section{padding:68px 0;border-top:1px solid var(--line)}.section-head{max-width:820px;margin-bottom:28px}.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;letter-spacing:-1px;margin:8px 0 10px}.section-head p{color:var(--muted);margin:0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.panel p,.domain p,.project p,.service p{color:var(--muted)}.panel h3,.skill h3,.domain h3,.project h3,.service h3{margin:0 0 9px}.tick{color:var(--cyan);padding-right:8px}.list{display:grid;gap:8px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{font-size:.75rem;color:#c7d8eb;background:#152a40;border:1px solid #28435d;padding:5px 9px;border-radius:99px}.skill{padding:19px}.skill p{font-size:.88rem;color:var(--muted);margin:10px 0 0}.domain{padding:19px}.domain .icon{font-size:1.35rem}.domain .meta{font-size:.75rem;color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:1px}.project{display:flex;flex-direction:column;min-height:245px;background:linear-gradient(160deg,var(--panel2),var(--panel));padding:20px}.project .num{color:var(--cyan);font-weight:800;font-size:.72rem;letter-spacing:1px}.project h3{font-size:1.04rem;line-height:1.35;margin:8px 0}.project p{font-size:.87rem;margin:0 0 15px}.project .tags{margin-top:auto}.project[hidden]{display:none}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.filter{border:1px solid var(--line);background:#10243a;color:var(--muted);padding:8px 13px;border-radius:99px;cursor:pointer;font:inherit;font-size:.82rem}.filter.active,.filter:hover{color:#04111e;background:var(--cyan);border-color:var(--cyan)}.project-count{color:var(--muted);font-size:.82rem;margin-left:auto;align-self:center}.timeline{border-left:2px solid #244664;margin-left:9px;padding-left:25px;display:grid;gap:19px}.timeline-item{position:relative}.timeline-item:before{content:"";position:absolute;left:-33px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px #123047}.timeline-item h3{margin:0}.timeline-item p{margin:3px 0;color:var(--muted)}.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cert{display:flex;gap:12px;align-items:center}.cert .medal{font-size:1.3rem;color:var(--cyan)}.cert strong{font-size:.9rem}.contact{background:linear-gradient(120deg,#103353,#0d263b);border:1px solid var(--line);border-radius:22px;padding:32px;display:flex;justify-content:space-between;gap:20px;align-items:center}.contact h2{font-size:1.9rem;margin:0 0 7px}.contact p{color:var(--muted);margin:0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}footer{padding:25px 0;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.note{padding:13px 16px;border-left:3px solid var(--cyan);background:#0b1a2a;color:var(--muted);font-size:.84rem;margin-top:18px}
-@media(max-width:1000px){nav{gap:10px}.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.profile-card{max-width:560px}}
-@media(max-width:700px){.wrap{width:calc(100% - 28px)}.menu{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;padding:18px 22px;background:#091827;flex-direction:column;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{padding:58px 0}.hero h1{letter-spacing:-1px}.grid2,.grid3,.grid4,.certs{grid-template-columns:1fr}.contact{display:block;padding:24px}.contact-actions{margin-top:18px}section{padding:52px 0}.project{min-height:unset}}
+:root{
+  --blue:#0b74de;--blue2:#13a8e8;--navy:#071b35;--ink:#12243a;
+  --muted:#64748b;--bg:#f6f9fc;--white:#fff;--line:#dce6f0;
+  --shadow:0 18px 55px rgba(7,27,53,.10);--radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,230,240,.8)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.4px}
+.logo-mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),#00a1e0);display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 8px 20px rgba(11,116,222,.25)}
+.logo span:last-child{color:var(--navy)}
+nav{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:650;color:#41536b}
+nav a:hover{color:var(--blue)}
+.nav-cta{background:var(--navy);color:white!important;padding:11px 17px;border-radius:12px}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(19,168,232,.16),transparent 30%),linear-gradient(135deg,#f7fbff 0%,#fff 65%);padding:86px 0 72px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#e9f5ff;color:#0565bf;border:1px solid #cce9ff;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800;margin-bottom:20px}
+h1{font-size:clamp(42px,5.2vw,72px);line-height:1.02;letter-spacing:-3.4px;color:var(--navy);margin-bottom:22px}
+h1 em{font-style:normal;color:var(--blue)}
+.hero p{font-size:18px;color:#56687e;max-width:670px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+.btn{border:0;cursor:pointer;border-radius:13px;padding:14px 20px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+.btn-primary{background:var(--blue);color:white;box-shadow:0 10px 25px rgba(11,116,222,.24)}
+.btn-primary:hover{transform:translateY(-2px);background:#0968c8}
+.btn-dark{background:var(--navy);color:white}
+.btn-light{background:white;color:var(--navy);border:1px solid var(--line)}
+.hero-note{font-size:13px!important;color:#73849a!important}
+.visual{background:linear-gradient(145deg,#071b35,#0c315a);border-radius:28px;padding:24px;box-shadow:var(--shadow);position:relative;min-height:405px;color:white}
+.visual:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-50px;top:-50px;background:rgba(19,168,232,.2);filter:blur(2px)}
+.dashboard{position:relative;z-index:2;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:20px}
+.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.dot{width:9px;height:9px;background:#31d58b;border-radius:50%;display:inline-block;margin-right:7px}
+.dash-title{font-size:13px;color:#bcd0e7}
+.dash-title strong{display:block;font-size:20px;color:white;margin-top:3px}
+.graph{height:145px;display:flex;align-items:end;gap:9px;border-bottom:1px solid rgba(255,255,255,.12);padding:0 8px 10px}
+.bar{flex:1;border-radius:7px 7px 2px 2px;background:linear-gradient(#25b7ed,#0b74de);min-height:25%}
+.bar:nth-child(2){height:43%}.bar:nth-child(3){height:55%}.bar:nth-child(4){height:48%}.bar:nth-child(5){height:76%}.bar:nth-child(6){height:65%}.bar:nth-child(7){height:90%}
+.mini-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.mini{background:rgba(255,255,255,.08);border-radius:12px;padding:12px}.mini b{display:block;font-size:19px}.mini small{color:#abc0d6}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:white}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr)}
+.stat{padding:25px 15px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border:0}.stat strong{display:block;color:var(--navy);font-size:25px}.stat span{font-size:12px;color:var(--muted)}
+section{padding:86px 0}
+.section-head{max-width:720px;margin-bottom:38px}
+.kicker{color:var(--blue);font-size:12px;text-transform:uppercase;letter-spacing:1.6px;font-weight:900;margin-bottom:8px}
+h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-2px;color:var(--navy);margin-bottom:14px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:0 8px 30px rgba(7,27,53,.04)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);transition:.2s}
+.icon{width:44px;height:44px;border-radius:13px;background:#eaf5ff;color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:17px}
+.card h3{margin-bottom:7px;color:var(--navy)}
+.card p,.card li{color:var(--muted);font-size:14px}
+.dark{background:var(--navy);color:white}
+.dark h2,.dark h3{color:white}.dark .section-head p{color:#b9c9db}
+.models{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.model{border-radius:26px;padding:34px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(145deg,#0b2a4c,#08203a)}
+.model.featured{background:linear-gradient(145deg,#0876dd,#0756ae);box-shadow:0 22px 50px rgba(0,90,180,.22)}
+.model .tag{display:inline-block;background:rgba(255,255,255,.13);padding:6px 10px;border-radius:99px;font-size:11px;font-weight:900;margin-bottom:16px}
+.model ul{list-style:none;margin:20px 0}.model li{margin:10px 0;color:#d3e2f2;font-size:14px}.model li:before{content:"✓";color:#4ed7ff;font-weight:900;margin-right:9px}
+.lifecycle{background:var(--bg)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;position:relative}
+.step b{display:block;color:var(--blue);font-size:12px;margin-bottom:5px}.step h3{font-size:16px;color:var(--navy)}
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.module{border:1px solid var(--line);border-radius:18px;padding:21px;background:white}
+.module .num{font-size:12px;font-weight:900;color:var(--blue)}.module h3{margin:5px 0;color:var(--navy);font-size:17px}.module p{font-size:13px;color:var(--muted)}
+.cert{background:#f7fbff}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cert .card{position:relative;overflow:hidden}.cert .card:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;background:#e8f5ff;right:-25px;top:-25px}
+.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.compare>div{padding:32px}.compare>div:first-child{background:#f8fafc}.compare>div:last-child{background:#eaf6ff}
+.compare h3{margin-bottom:16px;color:var(--navy)}.compare li{list-style:none;margin:10px 0;font-size:14px;color:var(--muted)}
+.compare li:before{content:"•";color:var(--blue);font-weight:900;margin-right:9px}
+.profile{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:center}
+.profile-box{min-height:310px;border-radius:25px;background:linear-gradient(145deg,#071b35,#0c4a78);display:grid;place-items:center;color:white;font-size:70px;font-weight:900}
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.journey .step{min-height:125px}
+.faq{max-width:850px}.faq-item{border-bottom:1px solid var(--line);padding:20px 0}.faq-q{display:flex;justify-content:space-between;gap:20px;cursor:pointer;font-weight:800;color:var(--navy)}.faq-a{display:none;color:var(--muted);font-size:14px;padding-top:10px}.faq-item.open .faq-a{display:block}
+.cta{padding:70px 0}.cta-box{background:linear-gradient(135deg,#071b35,#0a4e83);color:white;border-radius:30px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta-box h2{color:white;margin-bottom:10px}.cta-box p{color:#c4d8eb}
+footer{background:#041426;color:#a9bdd2;padding:40px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px}.footer-brand{color:white;font-weight:850}.footer-links{display:flex;gap:20px;font-size:13px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:25px;padding-top:20px;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:rgba(3,15,28,.7);z-index:200;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{background:white;border-radius:24px;width:min(600px,100%);padding:30px;position:relative;max-height:90vh;overflow:auto}.close{position:absolute;right:20px;top:15px;border:0;background:none;font-size:25px;cursor:pointer}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#43566e}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:10px;padding:11px;outline:none}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue)}
+@media(max-width:900px){
+ nav{display:none}.menu{display:block}.hero-grid,.profile{grid-template-columns:1fr}.cards,.modules,.cert-grid{grid-template-columns:1fr 1fr}.timeline,.journey{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:repeat(3,1fr)}.stat:nth-child(3){border-right:0}.stat:nth-child(n+4){border-top:1px solid var(--line)}.cta-box{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:620px){
+ section{padding:62px 0}.hero{padding:60px 0}.hero-grid{gap:35px}h1{letter-spacing:-2px}.cards,.modules,.cert-grid,.models,.compare,.timeline,.journey{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid var(--line)}.stat:nth-child(2n){border-right:0}.stat:nth-child(3){border-right:1px solid var(--line)}.mini-cards{grid-template-columns:1fr}.cta-box{padding:32px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{flex-direction:column}.footer-links{flex-wrap:wrap}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#home">GRK<span>.</span></a><button class="menu" id="menuBtn" aria-label="Toggle navigation">Menu ☰</button><nav id="navLinks"><a href="#about">Profile</a><a href="#technical">Technical Skills</a><a href="#domains">Business Domains</a><a href="#projects">Projects</a><a href="#integrations">Integrations</a><a href="#career">Career</a><a href="#contact">Contact</a></nav></div></header>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo"><span class="logo-mark">SF</span><span>Salesforce <b>Boot Camp</b></span></a>
+    <nav>
+      <a href="#why">Why Us</a><a href="#training">Training</a><a href="#curriculum">Curriculum</a>
+      <a href="#projects">Projects</a><a href="#faq">FAQ</a>
+      <a href="#apply" class="nav-cta">Apply Now</a>
+    </nav>
+    <button class="menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
 <main>
-<div class="wrap hero" id="home">
- <div><div class="eyebrow">Salesforce Technical Lead · Developer · Solution Design</div><h1>Technical depth.<br><em>Business understanding.</em><br>Solutions that scale.</h1>
- <p>I'm Gouni Ramakrishna Reddy, a software professional with 14+ years of IT experience, including 10+ years focused on Salesforce. My experience covers Salesforce platform engineering, CPQ, Agentforce, custom enterprise applications, payment gateway and e-signature integrations, accounting connectivity, managed packages, data migration and business-process automation across real estate, travel management, insurance and healthcare domains.</p>
- <div class="actions"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn secondary" href="https://www.linkedin.com/in/gouniramakrishnareddy/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn secondary" href="https://www.salesforce.com/trailblazer/ramakrishnagouni" target="_blank" rel="noopener">Trailblazer ↗</a></div></div>
- <aside class="profile-card"><div class="avatar">GR</div><h3>Gouni Ramakrishna Reddy</h3><p>Salesforce Technical Lead | CPQ | Agentforce | Apex | LWC | Enterprise Integrations</p><div class="statrow"><div class="stat"><strong>14+</strong><small>Years in IT</small></div><div class="stat"><strong>10+</strong><small>Years Salesforce</small></div><div class="stat"><strong>9</strong><small>Salesforce certifications</small></div><div class="stat"><strong>15</strong><small>Project / product examples</small></div></div></aside>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">● 1-to-1 Personal Training &nbsp;|&nbsp; Maximum 5 Learners</div>
+      <h1>Learn Salesforce.<br><em>Build Real Projects.</em><br>Become Job Ready.</h1>
+      <p>Intensive, hands-on Salesforce training for aspiring and working professionals. Learn Administration, Development, Automation, Apex, LWC, Integrations, Sales Cloud, Service Cloud, Experience Cloud and CPQ through real-world project scenarios.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="openModal('apply')">Apply for Boot Camp →</button>
+        <button class="btn btn-light" onclick="openModal('consult')">Book Free Consultation</button>
+      </div>
+      <p class="hero-note">Enterprise-style learning • Personal mentoring • Project exposure • Certification preparation</p>
+    </div>
+    <div class="visual">
+      <div class="dashboard">
+        <div class="dash-top"><div><span class="dot"></span><span class="dash-title">PROJECT-BASED LEARNING</span><strong>Salesforce Engineering Journey</strong></div><span>↗</span></div>
+        <div class="graph"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+        <div class="mini-cards">
+          <div class="mini"><b>1–5</b><small>Learners</small></div>
+          <div class="mini"><b>12</b><small>Core Modules</small></div>
+          <div class="mini"><b>3</b><small>Cert Tracks</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+<div class="container stats-grid">
+  <div class="stat"><strong>1–5</strong><span>Learners Per Batch</span></div>
+  <div class="stat"><strong>3+ Years</strong><span>Project-Style Exposure</span></div>
+  <div class="stat"><strong>3</strong><span>Certification Tracks</span></div>
+  <div class="stat"><strong>Admin + Dev</strong><span>Career Skills</span></div>
+  <div class="stat"><strong>Real Projects</strong><span>Hands-On Learning</span></div>
+</div>
 </div>
 
-<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">01 / Professional profile</div><h2>Engineering across the full solution lifecycle</h2><p>Not just a technology list: this portfolio connects technical capabilities to the business problems and project work where they were applied.</p></div>
-<div class="grid2"><div class="panel"><h3>Professional summary</h3><p>Technical Lead with 14+ years of IT experience, including 10+ years of hands-on Salesforce experience and solution architecture responsibilities. Experienced in leading implementation, enhancement and support work; understanding business requirements; designing maintainable solutions; troubleshooting production issues; and mentoring development teams.</p><p>Salesforce experience includes CPQ, Sales Cloud, Service Cloud, Health Cloud and Experience Cloud-related work, alongside custom platform development and integration-heavy applications. Earlier career work includes PHP-based web systems and hybrid mobile applications.</p></div>
-<div class="panel"><h3>What I bring to a project</h3><div class="list"><div><span class="tick">✓</span>Business requirement analysis and workflow mapping</div><div><span class="tick">✓</span>Technical design, data modelling and estimation</div><div><span class="tick">✓</span>Hands-on development and integration delivery</div><div><span class="tick">✓</span>Debugging, root-cause analysis and production support</div><div><span class="tick">✓</span>Code review, unit testing and deployment support</div><div><span class="tick">✓</span>Team mentoring and technical coordination</div></div></div></div></div></section>
-
-<section id="technical"><div class="wrap"><div class="section-head"><div class="kicker">02 / Technical capability map</div><h2>Technical skills across the stack</h2><p>Grouped by engineering discipline so a hiring team or client can quickly identify the relevant expertise.</p></div>
-<div class="grid3">
-<div class="skill"><h3>Salesforce platform development</h3><div class="tags"><span class="tag">Apex</span><span class="tag">Triggers</span><span class="tag">SOQL</span><span class="tag">Batch Apex</span><span class="tag">Queueable Apex</span><span class="tag">Scheduled Apex</span><span class="tag">Visualforce</span><span class="tag">Aura</span><span class="tag">LWC</span><span class="tag">Lightning Experience</span></div><p>Custom business logic, platform extensions, UI components, asynchronous processing and reusable services.</p></div>
-<div class="skill"><h3>Salesforce automation & configuration</h3><div class="tags"><span class="tag">Salesforce Flow</span><span class="tag">Workflow Rules</span><span class="tag">Process Builder</span><span class="tag">Approval Processes</span><span class="tag">Custom Settings</span><span class="tag">Reports</span><span class="tag">Dashboards</span></div><p>Declarative automation and configuration supporting operational workflows and approvals.</p></div>
-<div class="skill"><h3>Salesforce clouds & products</h3><div class="tags"><span class="tag">Sales Cloud</span><span class="tag">Service Cloud</span><span class="tag">Salesforce CPQ</span><span class="tag">Health Cloud</span><span class="tag">Experience / Partner Community</span><span class="tag">Agentforce</span></div><p>CRM, quote lifecycle, service processes, healthcare application work and partner-facing experiences.</p></div>
-<div class="skill"><h3>Integration engineering</h3><div class="tags"><span class="tag">REST API</span><span class="tag">SOAP</span><span class="tag">Apex Callouts</span><span class="tag">XML</span><span class="tag">SAP CPI</span><span class="tag">Docker Service</span><span class="tag">.NET Middleware</span><span class="tag">Bi-directional Sync</span></div><p>System-to-system connectivity, request/response processing, data synchronization and integration troubleshooting.</p></div>
-<div class="skill"><h3>Accounting, commerce & payments</h3><div class="tags"><span class="tag">QuickBooks Desktop</span><span class="tag">Xero</span><span class="tag">Autofy</span><span class="tag">Magento</span><span class="tag">SagePay</span><span class="tag">PayPal</span><span class="tag">Stripe</span><span class="tag">Razorpay</span><span class="tag">DocuSign</span><span class="tag">WordPress API</span></div><p>Accounting synchronization, order-to-cash workflows, invoice exchange, completed PayPal, Stripe, Razorpay and SagePay payment gateway integrations, DocuSign e-signatures and e-commerce connectivity.</p></div>
-<div class="skill"><h3>Managed packages & metadata</h3><div class="tags"><span class="tag">Managed Packages</span><span class="tag">Metadata Services</span><span class="tag">Dynamic Fields</span><span class="tag">Post-install Events</span><span class="tag">Uninstall Events</span><span class="tag">Package Testing</span><span class="tag">SOAP Mocks</span></div><p>Salesforce product engineering, configurable package behavior, dynamic metadata operations and release testing.</p></div>
-<div class="skill"><h3>Data migration & quality</h3><div class="tags"><span class="tag">Bulk Data Migration</span><span class="tag">Batch Callouts</span><span class="tag">Dynamic Pagination</span><span class="tag">Data Mapping</span><span class="tag">Validation</span><span class="tag">Error Logs</span></div><p>Legacy platform migration, large-volume processing, mapping, test validation and issue resolution.</p></div>
-<div class="skill"><h3>Web & mobile development</h3><div class="tags"><span class="tag">PHP</span><span class="tag">CodeIgniter</span><span class="tag">Zend Framework</span><span class="tag">CakePHP</span><span class="tag">AngularJS</span><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Ionic</span><span class="tag">REST Server API</span></div><p>Earlier full-stack web development, REST services and hybrid mobile application delivery.</p></div>
-<div class="skill"><h3>UI, database & delivery</h3><div class="tags"><span class="tag">SLDS</span><span class="tag">Bootstrap</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">MySQL</span><span class="tag">Doctrine</span><span class="tag">Unit Testing</span><span class="tag">Code Coverage</span><span class="tag">Agile</span><span class="tag">Deployment</span></div><p>Responsive interfaces, relational data design, test automation practices and release support.</p></div>
-</div></div></section>
-
-<section id="domains"><div class="wrap"><div class="section-head"><div class="kicker">03 / Business domain experience</div><h2>Understanding the business behind the technology</h2><p>These domain groupings are based on the business descriptions in the supplied project history. Click a domain to filter the project portfolio below.</p></div>
-<div class="grid4">
-<div class="domain"><div class="icon">🛍️</div><div class="meta">Retail & commerce</div><h3>Retail CPQ & franchise sales</h3><p>Product configuration, quote lifecycle, franchise-oriented retail processes and SAP-connected operations.</p><a href="#projects" class="tag domain-filter" data-filter="retail">View project →</a></div>
-<div class="domain"><div class="icon">💼</div><div class="meta">Finance & advisory</div><h3>Business advisory systems</h3><p>Multi-tier opportunity types, service tokens and routing business transactions to connected systems.</p><a href="#projects" class="tag domain-filter" data-filter="advisory">View project →</a></div>
-<div class="domain"><div class="icon">🏥</div><div class="meta">Healthcare</div><h3>Healthcare applications</h3><p>Health Cloud-related application work, inpatient/outpatient context, patient reminders and care workflows.</p><a href="#projects" class="tag domain-filter" data-filter="healthcare">View projects →</a></div>
-<div class="domain"><div class="icon">📣</div><div class="meta">Advertising & media</div><h3>Outdoor advertising</h3><p>Media inventory calendar, advertising availability, opportunities, agreements and order adjustments.</p><a href="#projects" class="tag domain-filter" data-filter="advertising">View project →</a></div>
-<div class="domain"><div class="icon">🏢</div><div class="meta">Real estate & interiors</div><h3>Property & partner brokerage</h3><p>Property listings, partner/vendor assignment, customer pipelines, commissions and invoices.</p><a href="#projects" class="tag domain-filter" data-filter="property">View projects →</a></div>
-<div class="domain"><div class="icon">🚌</div><div class="meta">Travel & transport</div><h3>Travel operations</h3><p>Trip planning, vehicle and driver availability, calendar scheduling and resource allocation.</p><a href="#projects" class="tag domain-filter" data-filter="travel">View project →</a></div>
-<div class="domain"><div class="icon">🚚</div><div class="meta">Logistics & supply chain</div><h3>Logistics operations</h3><p>Schedules, shipments, docks, carrier details, responsive workflows and role-based approvals.</p><a href="#projects" class="tag domain-filter" data-filter="logistics">View project →</a></div>
-<div class="domain"><div class="icon">🧾</div><div class="meta">Accounting & finance ops</div><h3>Accounting & invoicing</h3><p>QuickBooks connectivity, multi-file accounting, invoices, payments, commission allocation and sync logs.</p><a href="#projects" class="tag domain-filter" data-filter="accounting">View projects →</a></div>
-<div class="domain"><div class="icon">🎟️</div><div class="meta">Customer service</div><h3>Support & ticketing</h3><p>Service records, time tracking, cases, customer data and migration from a legacy support platform.</p><a href="#projects" class="tag domain-filter" data-filter="support">View projects →</a></div>
-<div class="domain"><div class="icon">🧺</div><div class="meta">Consumer services</div><h3>Laundry service operations</h3><p>Customer ordering, pickup, store and central processing workflows, dispatch and delivery.</p><a href="#projects" class="tag domain-filter" data-filter="consumer">View project →</a></div>
-<div class="domain"><div class="icon">🧑‍💼</div><div class="meta">HR & sales operations</div><h3>Employee performance</h3><p>Employee sales targets and tracking through a Salesforce-based people portal.</p><a href="#projects" class="tag domain-filter" data-filter="hr">View project →</a></div>
-<div class="domain"><div class="icon">🛒</div><div class="meta">E-commerce & order management</div><h3>Digital commerce workflows</h3><p>Online store integration, sales and purchase orders, invoices, e-signatures and payment services.</p><a href="#projects" class="tag domain-filter" data-filter="commerce">View project →</a></div>
+<section id="why">
+<div class="container">
+  <div class="section-head"><div class="kicker">The difference</div><h2>Why Learn Salesforce This Way?</h2><p>This is designed as a serious technical boot camp—not a mass-market video course.</p></div>
+  <div class="cards">
+    <div class="card"><div class="icon">01</div><h3>Small Batches</h3><p>Maximum 5 learners per batch, with 1-to-1 training available.</p></div>
+    <div class="card"><div class="icon">02</div><h3>Personal Mentoring</h3><p>Direct interaction, individual guidance, feedback and technical discussions.</p></div>
+    <div class="card"><div class="icon">03</div><h3>Real Projects</h3><p>Learn through realistic enterprise scenarios and implementation exercises.</p></div>
+    <div class="card"><div class="icon">04</div><h3>Hands-On Development</h3><p>Configure, code, integrate, test, troubleshoot and deploy.</p></div>
+    <div class="card"><div class="icon">05</div><h3>Certification Ready</h3><p>Practical learning aligned with Administrator, App Builder and Developer I preparation.</p></div>
+    <div class="card"><div class="icon">06</div><h3>Career Ready</h3><p>Build the technical foundation for Salesforce Administrator and Developer roles.</p></div>
+  </div>
 </div>
-<div class="note">Your source profile also lists exposure to hotel, insurance and hospital projects in its core competencies, but it does not provide detailed project descriptions for those areas. They are therefore not presented here as fully documented case studies.</div>
-</div></section>
+</section>
 
-<section id="projects"><div class="wrap"><div class="section-head"><div class="kicker">04 / Selected project portfolio</div><h2>Projects, products and real implementation work</h2><p>Filter by business domain or technical theme. Each summary describes the project context and the work recorded in your profile.</p></div>
-<div class="filters" id="filters">
-<button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="retail">Retail / CPQ</button><button class="filter" data-filter="advisory">Advisory</button><button class="filter" data-filter="healthcare">Healthcare</button><button class="filter" data-filter="advertising">Advertising</button><button class="filter" data-filter="property">Property / Partner</button><button class="filter" data-filter="travel">Travel</button><button class="filter" data-filter="logistics">Logistics</button><button class="filter" data-filter="accounting">Accounting</button><button class="filter" data-filter="support">Support / Migration</button><button class="filter" data-filter="consumer">Consumer services</button><button class="filter" data-filter="hr">HR / Sales ops</button><button class="filter" data-filter="commerce">E-commerce</button>
-<span class="project-count" id="projectCount">15 projects</span></div>
-<div class="grid3" id="projectGrid">
-<article class="project" data-cats="retail accounting"><div class="num">01 · RETAIL / CPQ</div><h3>IFF — Customized Retail CPQ</h3><p>Customized Salesforce CPQ for a retail and franchise business, integrated with SAP HANA through SAP CPI. Work included quote lifecycle streamlining, Apex and asynchronous processing, Aura/LWC development, support and root-cause analysis.</p><div class="tags"><span class="tag">Salesforce CPQ</span><span class="tag">SAP HANA</span><span class="tag">SAP CPI</span><span class="tag">Apex</span><span class="tag">LWC</span><span class="tag">RCA</span></div></article>
-<article class="project" data-cats="advisory accounting"><div class="num">02 · ADVISORY / MULTI-SYSTEM</div><h3>Gordon Brothers — Multi-tier Business System</h3><p>Salesforce business system for a global advisory, restructuring and investment firm. Opportunity and service transaction types were connected to different systems using Docker Service middleware; contributed integration code and Flows.</p><div class="tags"><span class="tag">Docker middleware</span><span class="tag">REST API</span><span class="tag">Apex</span><span class="tag">Flows</span><span class="tag">Force.com Site</span></div></article>
-<article class="project" data-cats="accounting commerce"><div class="num">03 · ACCOUNTING CONNECTOR / PRODUCT</div><h3>AppShark Connect — Salesforce to QuickBooks</h3><p>Salesforce-side development for an internal managed-package connector using .NET middleware for QuickBooks Desktop. Supported multi-currency, tax plans, multiple accounting files, custom object mapping, uni-/bi-directional sync, conditional/manual sync and error/result logs.</p><div class="tags"><span class="tag">Managed Package</span><span class="tag">QuickBooks Desktop</span><span class="tag">.NET</span><span class="tag">REST</span><span class="tag">XML</span><span class="tag">Batch Apex</span></div></article>
-<article class="project" data-cats="healthcare"><div class="num">04 · HEALTHCARE</div><h3>Accent Care — Healthcare Application</h3><p>Salesforce healthcare application work involving inpatient/outpatient context. Contributed Apex, triggers, custom settings, LWC, RPA-related code, unit testing, code coverage and deployment support.</p><div class="tags"><span class="tag">Health Cloud context</span><span class="tag">Apex</span><span class="tag">LWC</span><span class="tag">RPA</span><span class="tag">Testing</span></div></article>
-<article class="project" data-cats="advertising accounting commerce"><div class="num">05 · ADVERTISING / ORDER MANAGEMENT</div><h3>BlueOutdoor — Outdoor Ad Management</h3><p>Custom Lightning application for outdoor advertising inventory and media scheduling. Built calendar availability features, opportunity workflow, DocuSign integration, order adjustment/replacement handling and QuickBooks connectivity through Autofy.</p><div class="tags"><span class="tag">Lightning</span><span class="tag">Calendar UI</span><span class="tag">DocuSign</span><span class="tag">QuickBooks</span><span class="tag">Autofy</span><span class="tag">SLDS</span></div></article>
-<article class="project" data-cats="property accounting"><div class="num">06 · INTERIOR BROKERAGE / PARTNERS</div><h3>SuperStrata — Partner Community</h3><p>Standalone Salesforce partner experience for vendors, campaigns, leads, opportunities and customer assignment. Supported commission and invoice workflows, QuickBooks/Autofy synchronization, payment status updates, reports and dashboards.</p><div class="tags"><span class="tag">Partner Community</span><span class="tag">Apex</span><span class="tag">QuickBooks</span><span class="tag">Autofy</span><span class="tag">Commissions</span></div></article>
-<article class="project" data-cats="travel"><div class="num">07 · TRAVEL / RESOURCE SCHEDULING</div><h3>Omega Express — Travel Operations</h3><p>Salesforce Lightning application for bus and driver availability and trip scheduling. Built a day calendar with resource panels and drag-and-drop allocation, applying availability rules and preventing reassignment after trip start.</p><div class="tags"><span class="tag">Apex</span><span class="tag">Lightning Components</span><span class="tag">Calendar</span><span class="tag">Drag & Drop</span><span class="tag">SLDS</span></div></article>
-<article class="project" data-cats="support"><div class="num">08 · SERVICE MANAGEMENT / MANAGED PACKAGE</div><h3>Session Timer — Service Cloud Product</h3><p>Managed package to track time spent on service records. Developed JavaScript stop-timer behavior, Lightning UI, dynamic field creation using Metadata Services, trigger-based rollups across multiple lookup relationships, SOAP mocks and package lifecycle logic.</p><div class="tags"><span class="tag">Managed Package</span><span class="tag">Metadata Services</span><span class="tag">Apex</span><span class="tag">JavaScript</span><span class="tag">SOAP Mocks</span></div></article>
-<article class="project" data-cats="support"><div class="num">09 · CUSTOMER SUPPORT / DATA MIGRATION</div><h3>ShowClix — Desk.com to Salesforce Migration</h3><p>Connected Desk.com to Salesforce using REST APIs and migrated large volumes of companies, customers, cases, groups, labels, attachments, messages, notes and macros. Used Batch Apex callouts with dynamic pagination; supported testing and production deployment.</p><div class="tags"><span class="tag">REST API</span><span class="tag">Batch Apex</span><span class="tag">Callouts</span><span class="tag">Data Migration</span><span class="tag">Change Sets</span></div></article>
-<article class="project" data-cats="commerce accounting"><div class="num">10 · SALES / ORDER MANAGEMENT</div><h3>Branding Team — Salesforce Implementation</h3><p>Moved sales and order management processes to Salesforce. Integrated Magento, Xero, SagePay, DocuSign, Google Cloud file storage and WordPress bidirectional APIs. Built quote, sales order, purchase order and invoice PDFs using Visualforce/HTML/CSS.</p><div class="tags"><span class="tag">Magento</span><span class="tag">Xero</span><span class="tag">SagePay</span><span class="tag">DocuSign</span><span class="tag">WordPress API</span><span class="tag">PDF</span></div></article>
-<article class="project" data-cats="logistics"><div class="num">11 · LOGISTICS / SUPPLY CHAIN</div><h3>Tech-Logistics — Anheuser-Busch InBev</h3><p>Responsive Salesforce Lightning application supporting schedules, shipments, docks, carrier information and role-based approvals. Worked on SLDS UI, mobile responsiveness, JavaScript issue resolution, trigger consolidation and test coverage.</p><div class="tags"><span class="tag">Salesforce Lightning</span><span class="tag">SLDS</span><span class="tag">Responsive UI</span><span class="tag">Apex Triggers</span></div></article>
-<article class="project" data-cats="hr"><div class="num">12 · EMPLOYEE / SALES OPERATIONS</div><h3>People Portal — Employee Sales Tracking</h3><p>Salesforce application focused on employee sales targets and tracking. Contributed to technical requirement understanding, solution design and development.</p><div class="tags"><span class="tag">Salesforce</span><span class="tag">Requirements</span><span class="tag">Design</span><span class="tag">Development</span></div></article>
-<article class="project" data-cats="consumer"><div class="num">13 · CONSUMER SERVICES / WEB & MOBILE</div><h3>Laundry Waves — Service Marketplace</h3><p>Web and hybrid mobile application covering customer orders, pickup, store operations, central processing, dispatch and delivery. Worked on AngularJS UI, Doctrine database queries and REST server APIs used by mobile applications.</p><div class="tags"><span class="tag">AngularJS</span><span class="tag">CodeIgniter</span><span class="tag">Ionic</span><span class="tag">REST API</span><span class="tag">MySQL</span><span class="tag">Doctrine</span></div></article>
-<article class="project" data-cats="property"><div class="num">14 · REAL ESTATE</div><h3>PropLadder — Real Estate Portal</h3><p>Property listing portal for apartments, villas, plots, land and gated communities, including property and amenity details. Contributed to requirement analysis, workflow and database design, coding, testing, hosting and deployments.</p><div class="tags"><span class="tag">PHP</span><span class="tag">Zend Framework</span><span class="tag">MySQL</span><span class="tag">jQuery</span><span class="tag">CSS3</span></div></article>
-<article class="project" data-cats="healthcare"><div class="num">15 · HEALTH / PATIENT COMMUNICATION</div><h3>My PharmaCall — Medication Reminders</h3><p>Application generating medicine reminders for patients through SMS and voice calls. Contributed to UI interactions, database development, integration and testing.</p><div class="tags"><span class="tag">PHP</span><span class="tag">Zend Framework</span><span class="tag">MySQL</span><span class="tag">REST API</span><span class="tag">SMS / Voice</span></div></article>
+<section id="training" class="dark">
+<div class="container">
+  <div class="section-head"><div class="kicker">Learning model</div><h2>Choose Your Learning Model</h2><p>Focused learning with live interaction, practical implementation and personal attention.</p></div>
+  <div class="models">
+    <div class="model featured"><span class="tag">MAXIMUM PERSONAL ATTENTION</span><h3>1-to-1 Salesforce Personal Training</h3><ul><li>Flexible learning pace</li><li>Personalized curriculum</li><li>Career-specific mentoring</li><li>Individual code reviews</li><li>Interview preparation</li></ul><button class="btn btn-light" onclick="openModal('apply')">Apply for 1-to-1 Training</button></div>
+    <div class="model"><span class="tag">SMALL BATCH</span><h3>Small Batch Training — Maximum 5</h3><ul><li>Live instructor interaction</li><li>Collaborative problem solving</li><li>Individual attention</li><li>Hands-on assignments</li><li>Peer learning & technical discussions</li></ul><button class="btn btn-primary" onclick="openModal('apply')">Join Small Batch</button></div>
+  </div>
 </div>
-</div></section>
+</section>
 
-<section id="integrations"><div class="wrap"><div class="section-head"><div class="kicker">05 / Specialist technical work</div><h2>Integration, middleware, accounting and product engineering</h2><p>Dedicated capability areas that are often important for senior developer, technical lead and integration-focused roles.</p></div>
-<div class="grid2">
-<div class="capability"><h3>Enterprise integrations & middleware</h3><p>Recorded integration experience across multiple enterprise systems and middleware patterns.</p><div class="tags"><span class="tag">Salesforce ↔ SAP HANA via SAP CPI</span><span class="tag">Salesforce ↔ Docker Service</span><span class="tag">Salesforce ↔ QuickBooks Desktop via .NET</span><span class="tag">REST / SOAP</span><span class="tag">XML request / response</span><span class="tag">WordPress bidirectional API</span></div></div>
-<div class="capability"><h3>Accounting & financial workflows</h3><p>Salesforce connectivity and business workflow support involving accounting products.</p><div class="tags"><span class="tag">QuickBooks Desktop</span><span class="tag">Xero</span><span class="tag">Autofy</span><span class="tag">Multi-currency</span><span class="tag">Tax plans</span><span class="tag">Multiple accounting files</span><span class="tag">Invoice sync</span><span class="tag">Commission allocation</span><span class="tag">Sync/error logs</span></div></div>
-<div class="capability"><h3>Payment & commerce connectivity</h3><p>Completed payment gateway integration work with PayPal, Stripe and Razorpay, alongside SagePay, Magento e-commerce and Salesforce order/invoice workflows. Also completed electronic-signature integration work using DocuSign.</p><div class="tags"><span class="tag">PayPal</span><span class="tag">Stripe</span><span class="tag">Razorpay</span><span class="tag">SagePay</span><span class="tag">DocuSign e-signature</span><span class="tag">Magento</span><span class="tag">Sales orders</span><span class="tag">Purchase orders</span><span class="tag">Invoices</span></div></div>
-<div class="capability"><h3>Managed package & reusable product development</h3><p>Salesforce product engineering work on configurable packaged applications.</p><div class="tags"><span class="tag">AppShark Connect</span><span class="tag">Session Timer</span><span class="tag">Metadata Services</span><span class="tag">Dynamic fields</span><span class="tag">Multiple lookup rollups</span><span class="tag">Package testing</span><span class="tag">Post-install / uninstall</span><span class="tag">SOAP mocks</span></div></div>
-</div></div></section>
+<section class="lifecycle">
+<div class="container">
+  <div class="section-head"><div class="kicker">Real-world exposure</div><h2>Experience Salesforce Like You Are Working on a Real Project</h2><p>Move through the lifecycle from business requirement to production support.</p></div>
+  <div class="timeline">
+    <div class="step"><b>01</b><h3>Business Requirement</h3><p>Understand the business problem.</p></div>
+    <div class="step"><b>02</b><h3>Requirement Analysis</h3><p>Translate needs into Salesforce solutions.</p></div>
+    <div class="step"><b>03</b><h3>Solution Design</h3><p>Design scalable data and security models.</p></div>
+    <div class="step"><b>04</b><h3>Configuration</h3><p>Build objects, fields, layouts and processes.</p></div>
+    <div class="step"><b>05</b><h3>Automation</h3><p>Implement Flow and automation patterns.</p></div>
+    <div class="step"><b>06</b><h3>Apex Development</h3><p>Develop bulkified, tested Apex.</p></div>
+    <div class="step"><b>07</b><h3>Lightning</h3><p>Build reusable LWC components.</p></div>
+    <div class="step"><b>08</b><h3>Integration</h3><p>Connect Salesforce with external systems.</p></div>
+    <div class="step"><b>09</b><h3>Testing</h3><p>Debug, test and validate solutions.</p></div>
+    <div class="step"><b>10</b><h3>Deployment</h3><p>Prepare and deploy changes.</p></div>
+    <div class="step"><b>11</b><h3>Production Support</h3><p>Troubleshoot real-world issues.</p></div>
+    <div class="step"><b>12</b><h3>Professional Thinking</h3><p>Learn to analyze and solve problems.</p></div>
+  </div>
+</div>
+</section>
 
-<section id="career"><div class="wrap"><div class="section-head"><div class="kicker">06 / Professional journey</div><h2>Experience & certifications</h2><p>Career timeline and credentials recorded in the supplied profile.</p></div>
-<div class="grid2"><div class="panel"><h3>Professional experience</h3><div class="timeline">
-<div class="timeline-item"><h3>Tata Consultancy Services</h3><p>April 2022 – Present · Salesforce Technical Lead</p></div>
-<div class="timeline-item"><h3>AppShark Software Pvt. Ltd.</h3><p>September 2016 – March 2022 · Salesforce development, integrations and product work</p></div>
-<div class="timeline-item"><h3>PropLadder Realty Pvt. Ltd.</h3><p>January 2013 – September 2016 · Real estate portal development</p></div>
-<div class="timeline-item"><h3>Warriorz Soft Technologies Pvt. Ltd.</h3><p>May 2011 – December 2012 · PHP / web application development</p></div>
-</div></div>
-<div class="panel"><h3>Salesforce certifications</h3><div class="certs" style="grid-template-columns:1fr 1fr">
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailhead.salesforce.com/credentials/aiassociate" target="_blank" rel="noopener">Salesforce Certified AI Associate</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201" target="_blank" rel="noopener">Salesforce Certified Agentforce Specialist</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201" target="_blank" rel="noopener">Salesforce Certified Platform Administrator</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-app-builder---Plat-Admn-202" target="_blank" rel="noopener">Salesforce Certified Platform App Builder</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-platform-dev1---Plat-Dev-201" target="_blank" rel="noopener">Salesforce Certified Platform Developer I</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-platform-foundations---Plat-101" target="_blank" rel="noopener">Salesforce Certified Platform Foundations</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-sharing-visibility---Plat-Arch-205" target="_blank" rel="noopener">Salesforce Certified Platform Sharing and Visibility Architect</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-revenue-cloud-consultant---Rev-Con-201" target="_blank" rel="noopener">Salesforce Certified Revenue Management Consultant</a></strong></div>
-<div class="cert"><span class="medal">✦</span><strong><a href="https://trailheadacademy.salesforce.com/certificate/exam-cpq-admin---Sales-Admn-202" target="_blank" rel="noopener">Salesforce Certified CPQ Administrator</a></strong></div>
-</div></section>
+<section id="curriculum">
+<div class="container">
+  <div class="section-head"><div class="kicker">Curriculum</div><h2>Complete Salesforce Technical Curriculum</h2><p>A structured path from platform fundamentals through development, cloud products, integrations and CPQ.</p></div>
+  <div class="modules">
+    <div class="module"><span class="num">MODULE 01</span><h3>Salesforce Platform</h3><p>Architecture, objects, fields, record types, layouts, App Builder, formulas and validation.</p></div>
+    <div class="module"><span class="num">MODULE 02</span><h3>Security Model</h3><p>Profiles, permission sets, OWD, roles, sharing, FLS and record-level access.</p></div>
+    <div class="module"><span class="num">MODULE 03</span><h3>Data Model</h3><p>Relationships, junction objects, external IDs, roll-ups and schema design.</p></div>
+    <div class="module"><span class="num">MODULE 04</span><h3>Data Management</h3><p>Import Wizard, Data Loader, migration, cleansing, duplicates and data quality.</p></div>
+    <div class="module"><span class="num">MODULE 05</span><h3>Automation</h3><p>Flow Builder, record-triggered, screen, scheduled, autolaunched flows and debugging.</p></div>
+    <div class="module"><span class="num">MODULE 06</span><h3>Apex Development</h3><p>SOQL, SOSL, DML, classes, triggers, governor limits, async Apex and testing.</p></div>
+    <div class="module"><span class="num">MODULE 07</span><h3>Lightning Development</h3><p>Aura fundamentals and LWC architecture, JavaScript, events, wire, Apex and LDS.</p></div>
+    <div class="module"><span class="num">MODULE 08</span><h3>Integrations</h3><p>REST, SOAP, callouts, Named Credentials, JSON, authentication and error handling.</p></div>
+    <div class="module"><span class="num">MODULE 09</span><h3>Sales Cloud</h3><p>Leads, accounts, contacts, opportunities, products, price books and sales processes.</p></div>
+    <div class="module"><span class="num">MODULE 10</span><h3>Service Cloud</h3><p>Cases, queues, Omni-Channel, Knowledge and service automation.</p></div>
+    <div class="module"><span class="num">MODULE 11</span><h3>Experience Cloud</h3><p>External users, portals, sharing, authentication and Experience Cloud development.</p></div>
+    <div class="module"><span class="num">MODULE 12</span><h3>Salesforce CPQ</h3><p>Products, configuration, pricing, discounting, quotes and quote line items.</p></div>
+  </div>
+</div>
+</section>
 
-<section id="contact"><div class="wrap"><div class="contact"><div><div class="kicker">Let's connect</div><h2>Have a Salesforce or integration challenge?</h2><p>Open to discussing Salesforce development, CPQ, integrations, custom applications and technical delivery opportunities.</p></div><div class="contact-actions"><a class="btn primary" href="mailto:rkreddy.gouni@gmail.com">Email ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/gouniramakrishnareddy/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+<section class="cert">
+<div class="container">
+  <div class="section-head"><div class="kicker">Certification</div><h2>Three Certifications. One Career Path.</h2><p>Certification preparation is integrated into practical training instead of being treated as memorization.</p></div>
+  <div class="cert-grid">
+    <div class="card"><div class="icon">ADM</div><h3>Salesforce Administrator</h3><p>Configuration, security, data management, automation, reports, dashboards and user management.</p></div>
+    <div class="card"><div class="icon">APP</div><h3>Platform App Builder</h3><p>Data modeling, declarative development, application design, automation, security and App Builder.</p></div>
+    <div class="card"><div class="icon">DEV</div><h3>Platform Developer I</h3><p>Apex, SOQL, SOSL, triggers, testing, governor limits and Lightning development.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <div class="section-head"><div class="kicker">Project lab</div><h2>Build Realistic Salesforce Solutions</h2><p>Each scenario connects business problems to Salesforce implementation, technology choices and practical outcomes.</p></div>
+  <div class="cards">
+    <div class="card"><div class="icon">01</div><h3>Sales Management Platform</h3><p>Manage leads, accounts, opportunities, products and sales processes.</p></div>
+    <div class="card"><div class="icon">02</div><h3>Customer Service Platform</h3><p>Build Service Cloud scenarios around cases, queues, knowledge and support.</p></div>
+    <div class="card"><div class="icon">03</div><h3>Enterprise Integration</h3><p>Integrate Salesforce with an external application using REST APIs.</p></div>
+    <div class="card"><div class="icon">04</div><h3>Employee / Partner Portal</h3><p>Build an Experience Cloud application with appropriate sharing and authentication.</p></div>
+    <div class="card"><div class="icon">05</div><h3>CPQ Solution</h3><p>Create product, pricing, quoting and discounting scenarios.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+  <div class="section-head"><div class="kicker">The boot camp difference</div><h2>This Is Not Just a Course</h2></div>
+  <div class="compare">
+    <div><h3>Traditional Training</h3><ul><li>Large batches</li><li>Theory-heavy</li><li>Recorded videos</li><li>Limited interaction</li><li>Generic assignments</li><li>Certification memorization</li></ul></div>
+    <div><h3>Our Boot Camp</h3><ul><li>1-to-1 / maximum 5</li><li>Live training</li><li>Hands-on implementation</li><li>Real-world scenarios</li><li>Individual feedback</li><li>Technical & career preparation</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container profile">
+  <div class="profile-box">SF</div>
+  <div>
+    <div class="kicker">Trainer credibility</div><h2>Learn From Real Salesforce Engineering Experience</h2>
+    <p style="color:var(--muted);margin-bottom:18px">Learn Salesforce from an experienced technical professional with enterprise software, Salesforce development, integrations and real-world technical experience.</p>
+    <div class="cards" style="grid-template-columns:1fr 1fr">
+      <div class="card"><h3>13+ Years</h3><p>Professional experience</p></div>
+      <div class="card"><h3>Salesforce</h3><p>Apex, LWC, APIs, CPQ & CRM</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="lifecycle">
+<div class="container">
+  <div class="section-head"><div class="kicker">Your journey</div><h2>From Beginner to Salesforce Professional</h2></div>
+  <div class="journey">
+    <div class="step"><b>STEP 01</b><h3>Assessment</h3></div><div class="step"><b>STEP 02</b><h3>Personalized Plan</h3></div>
+    <div class="step"><b>STEP 03</b><h3>Fundamentals</h3></div><div class="step"><b>STEP 04</b><h3>Administration</h3></div>
+    <div class="step"><b>STEP 05</b><h3>Automation</h3></div><div class="step"><b>STEP 06</b><h3>Apex Development</h3></div>
+    <div class="step"><b>STEP 07</b><h3>LWC & Lightning</h3></div><div class="step"><b>STEP 08</b><h3>Integrations</h3></div>
+    <div class="step"><b>STEP 09</b><h3>Real-World Projects</h3></div><div class="step"><b>STEP 10</b><h3>Certification</h3></div>
+    <div class="step"><b>STEP 11</b><h3>Interview Preparation</h3></div><div class="step"><b>STEP 12</b><h3>Career Transition</h3></div>
+  </div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+  <div class="section-head"><div class="kicker">FAQ</div><h2>Questions, Answered.</h2></div>
+  <div class="faq">
+    <div class="faq-item"><div class="faq-q">How many people are in a batch?<span>+</span></div><div class="faq-a">Maximum 5 learners. 1-to-1 personal training is also available.</div></div>
+    <div class="faq-item"><div class="faq-q">Is this beginner friendly?<span>+</span></div><div class="faq-a">Yes. The curriculum can start from Salesforce fundamentals.</div></div>
+    <div class="faq-item"><div class="faq-q">Is this only for developers?<span>+</span></div><div class="faq-a">No. The program covers both Salesforce Administration and Development.</div></div>
+    <div class="faq-item"><div class="faq-q">Which certifications are covered?<span>+</span></div><div class="faq-a">Salesforce Administrator, Platform App Builder and Platform Developer I preparation.</div></div>
+    <div class="faq-item"><div class="faq-q">Is this live training?<span>+</span></div><div class="faq-a">Yes. The positioning is live, interactive and hands-on.</div></div>
+    <div class="faq-item"><div class="faq-q">Will I work on real projects?<span>+</span></div><div class="faq-a">Learners work through realistic project scenarios and implementation exercises designed to simulate enterprise Salesforce work.</div></div>
+    <div class="faq-item"><div class="faq-q">How much does the program cost?<span>+</span></div><div class="faq-a">Pricing is intentionally not shown here so it can be configured later.</div></div>
+  </div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+  <div class="cta-box">
+    <div><div class="kicker" style="color:#54c9ff">Start your journey</div><h2>Ready to Build Your Salesforce Career?</h2><p>Don't just learn concepts—build, troubleshoot, develop and think like a Salesforce professional.</p></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-primary" onclick="openModal('apply')">Apply for Boot Camp</button><button class="btn btn-light" onclick="openModal('consult')">Book Free Consultation</button></div>
+  </div>
+</div>
+</section>
 </main>
-<footer><div class="wrap foot"><span>© <span id="year"></span> Gouni Ramakrishna Reddy</span><span>Salesforce · Technical Expertise · Business Domains · Integrations</span></div></footer>
+
+<footer>
+<div class="container">
+  <div class="footer-grid"><div><div class="footer-brand">Salesforce Corporate Boot Camp</div><div style="font-size:13px;margin-top:5px">1-to-1 Training | Maximum 5 Learners | Hands-On Projects</div></div><div class="footer-links"><a href="#why">Why Us</a><a href="#curriculum">Curriculum</a><a href="#projects">Projects</a><a href="#faq">FAQ</a></div></div>
+  <div class="copyright">© <span id="year"></span> Salesforce Corporate Boot Camp. All rights reserved.</div>
+</div>
+</footer>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<button class="close" onclick="closeModal()">×</button>
+<h2 id="modalTitle" style="font-size:30px;margin-bottom:8px">Apply for Boot Camp</h2>
+<p id="modalText" style="color:var(--muted);margin-bottom:20px">Tell us about your Salesforce goals and preferred learning model.</p>
+<form id="leadForm">
+<div class="form-grid">
+<div class="field"><label>Full Name *</label><input required name="name"></div>
+<div class="field"><label>Email *</label><input required type="email" name="email"></div>
+<div class="field"><label>Phone</label><input name="phone"></div>
+<div class="field"><label>Current Location</label><input name="location"></div>
+<div class="field"><label>Current Profession</label><input name="profession"></div>
+<div class="field"><label>Years of IT Experience</label><input name="experience"></div>
+<div class="field"><label>Salesforce Experience</label><input name="sfexperience"></div>
+<div class="field"><label>Preferred Training</label><select name="training"><option>1-to-1</option><option>Small Batch — Maximum 5</option></select></div>
+<div class="field"><label>Certification Goal</label><select name="cert"><option>Salesforce Administrator</option><option>Platform App Builder</option><option>Platform Developer I</option><option>Not sure yet</option></select></div>
+<div class="field"><label>Preferred Schedule</label><input name="schedule"></div>
+<div class="field full"><label>Career Goal / Message</label><textarea name="message"></textarea></div>
+</div>
+<button class="btn btn-primary" style="width:100%;margin-top:18px" type="submit">Submit Application</button>
+</form>
+<div id="success" style="display:none;text-align:center;padding:20px 0"><div class="icon" style="margin:0 auto 15px">✓</div><h3>Thank you for applying.</h3><p style="color:var(--muted)">We will review your requirements and contact you to discuss the appropriate training path.</p></div>
+</div>
+</div>
+
 <script>
-const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
-menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+function toggleMenu(){
+  const nav=document.querySelector('nav');
+  const visible=nav.style.display==='flex';
+  nav.style.display=visible?'':'flex';
+  if(!visible){nav.style.position='absolute';nav.style.top='76px';nav.style.left='0';nav.style.right='0';nav.style.padding='18px';nav.style.background='white';nav.style.flexDirection='column';nav.style.alignItems='stretch';nav.style.boxShadow='0 15px 30px rgba(0,0,0,.1)'}
+}
+function openModal(type){
+  document.getElementById('modal').classList.add('show');
+  document.getElementById('modalTitle').textContent=type==='consult'?'Book Free Consultation':'Apply for Boot Camp';
+  document.getElementById('modalText').textContent=type==='consult'?'Tell us about your experience, goals and preferred training model.':'Tell us about your Salesforce goals and preferred learning model.';
+  document.getElementById('leadForm').style.display='block';
+  document.getElementById('success').style.display='none';
+}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+document.getElementById('leadForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('leadForm').style.display='none';
+  document.getElementById('success').style.display='block';
+});
 document.getElementById('year').textContent=new Date().getFullYear();
-const cards=[...document.querySelectorAll('.project')],buttons=[...document.querySelectorAll('.filter')],count=document.getElementById('projectCount');
-function filterProjects(key){let shown=0;cards.forEach(card=>{const cats=card.dataset.cats.split(' ');const visible=key==='all'||cats.includes(key);card.hidden=!visible;if(visible)shown++;});buttons.forEach(b=>b.classList.toggle('active',b.dataset.filter===key));count.textContent=shown+' project'+(shown===1?'':'s');}
-buttons.forEach(b=>b.addEventListener('click',()=>filterProjects(b.dataset.filter)));
-document.querySelectorAll('.domain-filter').forEach(a=>a.addEventListener('click',()=>filterProjects(a.dataset.filter)));
 </script>
-</body></html>
+</body>
+</html>
